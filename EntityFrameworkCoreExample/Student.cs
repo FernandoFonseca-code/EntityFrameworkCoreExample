@@ -10,9 +10,6 @@ namespace EntityFrameworkCoreExample
     public class Student
     {
         [Key] // Tell EF Core to make this a primary key (PK)
-        /// <summary>
-        /// T
-        /// </summary>
         public int Id { get; set; }
         public string FullName { get; set; }
         public DateOnly DateOfBirth { get; set; }
