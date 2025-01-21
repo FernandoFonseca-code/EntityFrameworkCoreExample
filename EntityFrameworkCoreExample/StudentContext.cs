@@ -23,5 +23,8 @@ namespace EntityFrameworkCoreExample
             // Trusted_Connection = True means we are using Windows Authentication
             options.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=EFCoreExample;Trusted_connection=True;");
         }
+
+        // Tell EF Core to track Students in the database
+        public DbSet<Student> Students { get; set; }
     }
 }
