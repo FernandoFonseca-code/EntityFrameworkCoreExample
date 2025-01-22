@@ -13,5 +13,7 @@ namespace EntityFrameworkCoreExample
         public int Id { get; set; }
         public string FullName { get; set; }
         public DateOnly DateOfBirth { get; set; }
+
+        public string EmailAddress { get; set; }
     }
 }
